@@ -1,4 +1,4 @@
-package config;
+package Config;
 
 import io.restassured.specification.RequestSpecification;
 
@@ -8,6 +8,6 @@ public class BaseClient {
     protected RequestSpecification getSpec() {
         return given().log().all()
                 .header("Content-type", "application/json")
-                .baseUri(config.Config.BASE_URL);
+                .baseUri(Config.BASE_URL);
     }
 }

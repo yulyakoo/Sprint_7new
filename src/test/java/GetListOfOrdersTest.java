@@ -1,6 +1,6 @@
 import io.qameta.allure.junit4.DisplayName;
-import order.OrderClient;
-import order.OrderResponse;
+import Order.OrderClient;
+import Order.OrderResponse;
 import org.junit.Before;
 import org.junit.Test;
 

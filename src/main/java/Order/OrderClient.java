@@ -1,13 +1,14 @@
-package order;
+package Order;
 
-import config.BaseClient;
+import Config.BaseClient;
+import Order.Order;
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 
 public class OrderClient extends BaseClient {
     private final String ROOT = "/orders";
     @Step("Создание заказа")
-    public ValidatableResponse create(order.Order order) {
+    public ValidatableResponse create(Order order) {
         return getSpec()
                 .body(order)
                 .when()

@@ -1,6 +1,6 @@
-package courier;
+package Courier;
 
-import config.BaseClient;
+import Config.BaseClient;
 import io.qameta.allure.Step;
 import io.restassured.response.ValidatableResponse;
 
@@ -19,7 +19,7 @@ public class CourierClient extends BaseClient {
     }
 
     @Step("Создание курьера")
-    public ValidatableResponse create(courier.Courier courier) {
+    public ValidatableResponse create(Courier courier) {
         return getSpec()
                 .body(courier)
                 .when()
@@ -28,7 +28,7 @@ public class CourierClient extends BaseClient {
     }
 
     @Step("Логин курьера в системе")
-    public ValidatableResponse login(courier.CourierCredentials creds) {
+    public ValidatableResponse login(CourierCredentials creds) {
         return getSpec()
                 .body(creds)
                 .when()

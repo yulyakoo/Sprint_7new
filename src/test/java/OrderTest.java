@@ -1,7 +1,7 @@
 import io.qameta.allure.junit4.DisplayName;
-import order.Order;
-import order.OrderClient;
-import order.OrderTestData;
+import Order.Order;
+import Order.OrderClient;
+import Order.OrderTestData;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

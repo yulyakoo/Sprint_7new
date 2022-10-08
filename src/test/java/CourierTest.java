@@ -1,5 +1,6 @@
-import courier.*;
-import courier.Courier;
+import Courier.Courier;
+import Courier.CourierClient;
+import Courier.CourierCredentials;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
@@ -9,13 +10,13 @@ import static org.junit.Assert.*;
 
 public class CourierTest {
     Courier courier;
-    courier.CourierClient courierClient;
+    CourierClient courierClient;
     private int courierId;
 
     @Before
     public void setUp() {
         courier = Courier.getRandomCourier();
-        courierClient = new courier.CourierClient();
+        courierClient = new CourierClient();
     }
 
     @After

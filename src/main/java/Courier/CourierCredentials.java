@@ -1,4 +1,4 @@
-package courier;
+package Courier;
 
 public class CourierCredentials {
     private String login;
@@ -9,7 +9,7 @@ public class CourierCredentials {
         this.password = password;
     }
 
-    public static CourierCredentials from(courier.Courier courier) {
+    public static CourierCredentials from(Courier courier) {
         return new CourierCredentials(
                 courier.getLogin(),
                 courier.getPassword()

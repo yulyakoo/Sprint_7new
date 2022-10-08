@@ -1,4 +1,4 @@
-package order;
+package Order;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class Order {
     private String firstName;
-    private  String lastName;
+    private String lastName;
     private String address;
     private String metroStation;
     private String phone;
@@ -16,7 +16,8 @@ public class Order {
     private String comment;
     private List<String> color;
 
-    public Order() {}
+    public Order() {
+    }
 
     public Order(String firstName, String lastName, String address, String metroStation, String phone, Integer rentTime, String deliveryDate, String comment, List<String> color) {
         this.firstName = firstName;
@@ -115,4 +116,5 @@ public class Order {
 
     public void setColor(List<String> color) {
         this.color = color;
-    } }
+    }
+}
