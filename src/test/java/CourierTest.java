@@ -1,6 +1,6 @@
-import Courier.Courier;
-import Courier.CourierClient;
-import Courier.CourierCredentials;
+import courier.Courier;
+import courier.CourierClient;
+import courier.CourierCredentials;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;

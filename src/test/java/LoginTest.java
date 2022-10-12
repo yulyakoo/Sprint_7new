@@ -1,6 +1,6 @@
-import Courier.Courier;
-import Courier.CourierClient;
-import Courier.CourierCredentials;
+import courier.Courier;
+import courier.CourierClient;
+import courier.CourierCredentials;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
@@ -9,8 +9,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LoginTest {
-    Courier courier;
-    CourierClient courierClient;
+    courier.Courier courier;
+    courier.CourierClient courierClient;
     private int courierId;
 
     @Before
